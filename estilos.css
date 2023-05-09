@@ -1,0 +1,984 @@
+/* estilos generales */
+* {
+    font-family: 'Calibri', sans-serif;
+    font-size: small;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Bruno Ace SC', 'Cinzel', 'Alkatra', cursive, serif;
+    font-size: 23px;
+    color: #0b1736;
+}
+
+h3 {
+    font-family: 'Bruno Ace SC', 'Cinzel', 'Alkatra', cursive, serif;
+    font-size: 20px;
+    color: #0b1736;
+}
+
+h4 {
+    font-family: 'Bruno Ace SC', 'Cinzel', 'Alkatra', cursive, serif;
+    font-size: 17px;
+    color: #ff9100;
+}
+
+p {
+    font-size: 14px;
+    color: #212121;
+}
+
+/* HEADER */
+header {
+    max-width: 100%;
+    height: 5.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0b1736;
+}
+
+.logo-arpro img {
+    width: 12rem;
+    margin-left: .5rem;
+}
+
+/* REDES Y LOGIN */
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links a i {
+    margin: 0 1rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.login {
+    margin: 0 2rem;
+}
+
+.login {
+    padding: 6px;
+    background: #ffffff;
+    color: #0b1736;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* BANNER */
+#banner {
+    max-width: 100%;
+    height: 25rem;
+    background: url(imagenes/banner-matrix.jpg) no-repeat center center/cover;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    line-height: 3rem;
+}
+
+#welcome {
+    text-transform: capitalize;
+    letter-spacing: .5rem;
+    text-align: center;
+    justify-content: end
+}
+
+#welcome h2 {
+    margin: 1rem;
+    font-size: 4rem;
+    color: #ffffff;
+    text-shadow: 0 0 .5rem #000;
+}
+
+#welcome h4 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 0 0 .5rem #000;
+}
+
+#welcome h3 {
+    font-size: 4rem;
+    color: #ffffff;
+    text-shadow: 0 0 .5rem #000;
+}
+
+/* CONTENEDOR DESDE DATOS PERSONALES EN ADELANTE*/
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* ACERCA DE MI */
+#contain-acerca-de-mi {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.datos-personales img {
+    position: absolute;
+    top: 25rem;
+    left: 17.4rem;
+    width: 11rem;
+    border-radius: 50%;
+}
+
+.datos-personales {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#contain-acerca-de-mi h2 {
+    margin-bottom: 2rem;
+}
+
+#contain-acerca-de-mi h3 {
+    margin: 5rem 0 1rem;
+}
+
+.resumen-sobre-mi {
+    flex-basis: 65%;
+    text-align: justify;
+}
+
+/* EXPERIENCIA */
+#experiencia-laboral h2 {
+    margin-bottom: 3rem;
+}
+
+.experiencia {
+    padding-bottom: 3rem;
+}
+
+.experiencia img {
+    width: 30rem;
+}
+
+.experiencia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.descripcion-experiencia {
+    margin-left: 2rem;
+    padding-left: 3rem;
+    text-align: justify;
+}
+
+.descripcion-experiencia h3,
+.descripcion-experiencia h4 {
+    margin-bottom: 1rem;
+}
+
+#experiencia-laboral {
+    margin-bottom: 2rem;
+}
+
+/* EDUCACION FORMAL*/
+#educacion-formal h2 {
+    margin-bottom: 3rem;
+}
+
+.estudios {
+    padding-bottom: 3rem;
+}
+
+.estudios img {
+    width: 30rem;
+}
+
+.estudios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descripcion-estudios {
+    margin-left: 2rem;
+    padding-left: 3rem;
+    text-align: justify;
+}
+
+.descripcion-estudios h3,
+.descripcion-estudios h4 {
+    margin-bottom: 1rem;
+}
+
+#educacion-formal {
+    margin-bottom: 2rem;
+}
+
+/* HARD & SOFT SKILLs */
+#skills h2 {
+    margin-bottom: 3rem;
+}
+
+.contain-habilidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#skills {
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: .8rem;
+}
+
+.skill-name h4 {
+    color: #0b1736;
+}
+
+.skill-name {
+    flex-basis: 35%;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0b1736;
+}
+
+.meter {
+    position: relative;
+    height: 8px;
+    flex-basis: 40%;
+    background-color: #ccc;
+}
+
+.meter span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #ff7b00;
+    transition: width 2s ease-in-out;
+}
+
+/* PROYECTOS */
+#projects h2 {
+    margin-bottom: 2rem;
+}
+
+.project {
+    padding-bottom: 3rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project img {
+    width: 30rem;
+}
+
+.descripcion-proyecto {
+    margin-left: 2rem;
+    padding-left: 3rem;
+    text-align: justify;
+}
+
+#projects {
+    margin-bottom: 2rem;
+}
+
+.descripcion-proyecto h3,
+.descripcion-proyecto h4 {
+    margin-bottom: 1rem;
+}
+
+hr {
+    border: none;
+    height: .2rem;
+    background-color: #717171;
+    margin-bottom: .1rem;
+}
+
+.footer p {
+    background-color: #0b1736;
+    font-size: 1.2rem;
+    padding: 1rem 0 5rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* PANTATALLA ESTANDAR */
+@media (max-width: 1366px) {
+    .datos-personales img {
+        position: absolute;
+        top: 25rem;
+        left: 16rem;
+        width: 11rem;
+        border-radius: 50%;
+    }
+}
+
+/* PANTALLA MEDIANA*/
+@media (max-width: 1024px) {
+    #banner {
+        max-width: 100%;
+        height: 25rem;
+        background: url(imagenes/banner-matrix.jpg) no-repeat center center/cover;
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        line-height: 3rem;
+    }
+
+    #welcome h2 {
+        margin: .5rem;
+        font-size: 3.2rem;
+        color: #ffffff;
+        text-shadow: 0 0 0.5rem #000;
+    }
+
+    #welcome h4 {
+        font-size: 1.7rem;
+        color: #ffffff;
+        text-shadow: 0 0 .5rem #000;
+    }
+
+    #welcome h3 {
+        margin: .5rem;
+        font-size: 3.2rem;
+        color: #ffffff;
+        text-shadow: 0 0 0.5rem #000;
+    }
+
+    .datos-personales img {
+        position: absolute;
+        top: 25rem;
+        left: 11rem;
+        width: 10rem;
+        border-radius: 50%;
+    }
+
+    #contain-acerca-de-mi h3 {
+        margin: 6.3rem 0 1rem;
+    }
+
+    /* Habilidades */
+    .contain-habilidades {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem 8rem;
+    }
+
+    .skill-name {
+        flex-basis: 60%;
+        font-size: 15px;
+        font-weight: bold;
+        color: #0b1736;
+    }
+
+    .meter {
+        position: relative;
+        height: 8px;
+        flex-basis: 45%;
+        background-color: #ccc;
+    }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+
+    /* CONTENEDOR DESDE DATOS PERSONALES EN ADELANTE*/
+    .container {
+        width: 94%;
+        margin: auto;
+    }
+
+    /* BANNER */
+    #banner {
+        max-width: 100%;
+        height: 18rem;
+        background: url(imagenes/banner-matrix.jpg) no-repeat center center/cover;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        line-height: 2rem;
+    }
+
+    #welcome {
+        text-transform: capitalize;
+        letter-spacing: .5rem;
+        text-align: center;
+        justify-content: end
+    }
+
+    #welcome h2 {
+        margin: 1rem;
+        font-size: 2.8rem;
+        color: #ffffff;
+        text-shadow: 0 0 .5rem #000;
+    }
+
+    #welcome h4 {
+        font-size: 1.5rem;
+        color: #ffffff;
+        text-shadow: 0 0 .5rem #000;
+    }
+
+    #welcome h3 {
+        font-size: 2.8rem;
+        color: #ffffff;
+        text-shadow: 0 0 .5rem #000;
+        margin-bottom: 3rem;
+    }
+
+    /* ACERCA DE MI */
+    #contain-acerca-de-mi {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 4rem;
+    }
+
+    .datos-personales img {
+        position: absolute;
+        top: 20rem;
+        left: 7.5rem;
+        width: 9rem;
+        border-radius: 50%;
+    }
+
+    .datos-personales {
+        flex-basis: 38%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #contain-acerca-de-mi h2 {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    #contain-acerca-de-mi h3 {
+        font-size: 1.4rem;
+        margin: 7rem 0 .8rem;
+    }
+
+    #contain-acerca-de-mi h4 {
+        font-size: 1.2rem;
+    }
+
+    .resumen-sobre-mi {
+        flex-basis: 62%;
+        text-align: justify;
+        margin-left: 1.5rem;
+    }
+
+    /* EXPERIENCIA */
+    #experiencia-laboral h2 {
+        font-size: 1.7rem;
+        margin-bottom: 3rem;
+    }
+
+    #experiencia-laboral h3 {
+        font-size: 1.4rem;
+    }
+
+    #experiencia-laboral h4 {
+        font-size: 1.3rem;
+    }
+
+    .experiencia {
+        padding-bottom: 3rem;
+    }
+
+    .experiencia img {
+        width: 19rem;
+    }
+
+    .experiencia {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .descripcion-experiencia {
+        margin-left: 1rem;
+        padding-left: 2rem;
+        text-align: justify;
+    }
+
+    .descripcion-experiencia h3,
+    .descripcion-experiencia h4 {
+        margin-bottom: 1rem;
+    }
+
+    #experiencia-laboral {
+        margin-bottom: 2rem;
+    }
+
+    /* EDUCACION FORMAL*/
+    #educacion-formal h2 {
+        font-size: 1.7rem;
+        margin-bottom: 3rem;
+    }
+
+    #educacion-formal h3 {
+        font-size: 1.4rem;
+    }
+
+    #educacion-formal h4 {
+        font-size: 1.3rem;
+    }
+
+    .estudios {
+        padding-bottom: 3rem;
+    }
+
+    .estudios img {
+        width: 19rem;
+    }
+
+    .estudios {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .descripcion-estudios {
+        margin-left: 1rem;
+        padding-left: 2rem;
+        text-align: justify;
+    }
+
+    .descripcion-estudios h3,
+    .descripcion-estudios h4 {
+        margin-bottom: 1rem;
+    }
+
+    #educacion-formal {
+        margin-bottom: 3rem;
+    }
+
+    /* HARD & SOFT SKILLs */
+    #skills h2 {
+        margin-bottom: 3rem;
+    }
+
+    .contain-habilidades {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .skill {
+        display: flex;
+        align-items: center;
+        margin-bottom: .8rem;
+    }
+
+    .skill-name h4 {
+        color: #0b1736;
+    }
+
+    .skill-name {
+        flex-basis: 42%;
+        font-size: 15px;
+        font-weight: bold;
+        color: #0b1736;
+    }
+
+    .skill-name h4 {
+        font-size: 1.3rem;
+        color: #2d2d2d;
+    }
+
+    .meter {
+        position: relative;
+        height: 8px;
+        flex-basis: 50%;
+        background-color: #ccc;
+    }
+
+    .meter span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        background-color: #ff7b00;
+        transition: width 2s ease-in-out;
+    }
+
+    #skills {
+        padding-bottom: 3rem;
+    }
+
+    /* PROYECTOS */
+    #projects h2 {
+        margin-bottom: 1.7rem;
+    }
+
+    #projects h3 {
+        font-size: 1.4rem;
+    }
+
+    .project {
+        padding-bottom: 3rem;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .project img {
+        width: 19rem;
+    }
+
+    .descripcion-proyecto {
+        margin-left: 1rem;
+        padding-left: 2rem;
+        text-align: justify;
+    }
+
+    #projects {
+        margin-bottom: 2rem;
+    }
+
+    .descripcion-proyecto h3,
+    .descripcion-proyecto h4 {
+        margin-bottom: 1rem;
+    }
+}
+
+/* PANTATALLA MOVIL */
+@media (max-width: 412px) {
+
+    /* TITULOS Y SUBTITULOS */
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+    }
+
+    /* HEADER */
+    header {
+        max-width: 100%;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #0b1736;
+    }
+
+    .logo-arpro img {
+        width: 9.5rem;
+        margin-left: .1rem;
+    }
+
+    /* REDES Y LOGIN */
+    .links {
+        display: flex;
+        align-items: center;
+    }
+
+    .links a i {
+        margin: 0 .5rem;
+        color: #ffffff;
+        font-size: 1.2rem;
+    }
+
+    .login {
+        margin: 0 1rem;
+    }
+
+    .login {
+        padding: 4px 7px;
+        background: #ffffff;
+        color: #0b1736;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    /* BANNER */
+    #banner {
+        max-width: 100%;
+        height: 18rem;
+        background: url(imagenes/banner-matrix.jpg) no-repeat center center/cover;
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        line-height: 1.7rem;
+    }
+
+    #welcome {
+        display: flex;
+        flex-direction: column;
+        text-transform: capitalize;
+        letter-spacing: .5rem;
+        text-align: center;
+        justify-content: flex-start
+    }
+
+    #welcome h2 {
+
+        margin-top: 3rem;
+        font-size: 2.5rem;
+        color: #ffffff;
+        text-shadow: 0 0 .5rem #000;
+    }
+
+    #welcome h4 {
+
+        font-size: 1.5rem;
+        color: #ffffff;
+        text-shadow: 0 0 .5rem #000;
+    }
+
+    #welcome h3 {
+
+        font-size: 2.5rem;
+        color: #ffffff;
+        text-shadow: 0 0 .5rem #000;
+    }
+
+    /* CONTENEDOR DESDE DATOS PERSONALES EN ADELANTE*/
+    .container {
+        width: 90%;
+    }
+
+    /* ACERCA DE MI */
+    #contain-acerca-de-mi {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+
+    .datos-personales img {
+        position: absolute;
+        top: 14rem;
+        left: 10.5rem;
+        width: 11rem;
+        border-radius: 50%;
+    }
+
+    .datos-personales {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #contain-acerca-de-mi h2 {
+        margin: 1rem 0;
+    }
+
+    #contain-acerca-de-mi h3 {
+        margin: 4.5rem 0 .5rem;
+    }
+
+    #contain-acerca-de-mi h4 {
+        margin: .5rem 0 2rem;
+    }
+
+    .resumen-sobre-mi {
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    /* EXPERIENCIA */
+    #experiencia-laboral h2 {
+        margin-bottom: 3rem;
+    }
+
+    .experiencia {
+        padding-bottom: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .experiencia img {
+        width: 28rem;
+    }
+
+    .experiencia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .descripcion-experiencia {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: justify;
+    }
+
+    .descripcion-experiencia h3,
+    .descripcion-experiencia h4 {
+        margin: 1rem 0;
+    }
+
+    #experiencia-laboral {
+        margin: 1.5rem 0;
+    }
+
+    /* EDUCACION FORMAL*/
+    #educacion-formal h2 {
+        margin-bottom: 3rem;
+    }
+
+    .estudios {
+        padding-bottom: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .estudios img {
+        width: 28rem;
+    }
+
+    .estudios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descripcion-estudios {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: justify;
+    }
+
+    .descripcion-estudios h3,
+    .descripcion-estudios h4 {
+        margin: 1rem 0;
+    }
+
+    #educacion-formal {
+        margin-bottom: 2rem;
+    }
+
+    /* HARD & SOFT SKILLs */
+    #skills h2 {
+        margin-bottom: 3rem;
+    }
+
+    .contain-habilidades {
+        display: flex;
+        flex-direction: column;     
+    }
+
+    #skills {
+        padding-bottom: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .skill {
+        display: flex;
+        align-items: center;
+        margin-bottom: .8rem;
+    }
+
+    .skill-name h4 {
+        text-align: left;
+        color: #0b1736;
+    }
+
+    .skill-name {
+        flex-basis: 40%;
+        font-size: 15px;
+        font-weight: bold;
+        color: #0b1736;
+    }
+
+    .meter {
+        position: relative;
+        height: 8px;
+        flex-basis: 60%;
+        background-color: #ccc;
+    }
+
+    .meter span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        background-color: #ff7b00;
+        transition: width 2s ease-in-out;
+    }
+
+    /* PROYECTOS */
+    #projects h2 {
+        margin-bottom: 2rem;
+    }
+
+    .project {
+        padding-bottom: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project img {
+        width: 28rem;
+    }
+
+    .descripcion-proyecto {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: justify;
+    }
+
+    #projects {
+        margin-bottom: 2rem;
+    }
+
+    .descripcion-proyecto h3,
+    .descripcion-proyecto h4 {
+        margin-bottom: 1rem;
+    }
+
+    hr {
+        border: none;
+        height: .2rem;
+        background-color: #717171;
+        margin-bottom: .1rem;
+    }
+
+    .footer p {
+        background-color: #0b1736;
+        font-size: .95rem;
+        padding: 1rem 0 5rem;
+        text-align: center;
+        color: #ffffff;
+    }
+}
